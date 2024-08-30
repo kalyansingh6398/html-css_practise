@@ -1,0 +1,71 @@
+<!-- property of position:-
+
+relative :- its work relative to the parent 
+absolute:- its work relative to the root element => html
+fixed :- its work relative to the root element => html ye jis par laga hoga vo fix ho jaega scroll karane par uppern niche nahi hoga
+z-index :- isame jiska index jyada vo usake upper aa jaega 
+z-index : 2;
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position property</title>
+    <style>
+     .container{
+        background-color: gray;
+        width: 300px;
+        height: 600px;
+        margin: 100px;
+     }
+     .box{
+        width: 100px;
+        height: 100px;
+         }
+     .red{
+        background-color: red;
+        /* position: relative; */
+        /* top: 100px; */
+        top: 100px;
+        left: 10px;        
+     }
+     .green{
+        background-color: green;
+        position: absolute;
+       bottom: 0;
+       right: 0;
+   /* z-index: 3; */
+     }
+     .blue{
+        background-color: blue;
+        position: fixed;
+         bottom: 50px;
+        /* left: 0; */
+        right: 50px;
+            
+     }
+     .purple{
+        background-color: purple;
+        position: sticky;
+        top: 50px;
+        /* left: 100px; */
+     }
+     .spacer{
+        height: 300vh;
+        /* width: 300vw; */
+     }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red">Relative</div>
+        <div class="box green">Absolute</div>
+        <div class="box blue">Fixed</div>
+        <div class="box purple">Sticky</div>
+    </div>
+
+    <div class="spacer"></div>
+</body>
+</html>

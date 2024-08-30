@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Silkscreen&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'lato', sans-serif;
+}
+
+.outer-box {
+    width: 100vw;
+    height: 100vh;
+    /* background: linear-gradient(to top left, #dda0dd, #ffc0cb); */
+    animation: myAnimation 10s infinite;
+}
+
+@keyframes myAnimation {
+    0% {
+        background: linear-gradient(to top left, #3498db, #a8f5ff);
+    }
+
+    100% {
+        background: linear-gradient(to top left, #dda0dd, #ffc0cb);
+    }
+}
+
+.outer-box:hover {
+    background: linear-gradient(to top left, #3498db, #a8f5ff);
+
+}
+
+.inner-box {
+    width: 400px;
+    margin: 0 auto;
+    position: relative;
+    top: 40%;
+    transform: translatey(-50%);
+    /* inner box ki jitani height hogi  usake hisaab inner box  50 percentage upper ho jaega */
+    /* border: 1px solid black; */
+    padding: 20px 40px;
+    background-color: white;
+    border-radius: 8px;
+    z-index: 2;
+    box-shadow: 2px 2px 5px #2773a5, -2px -2px paleturquoise;
+    backdrop-filter: blur(8px);  /*yeh jis apply hoga usse blur kar dega */
+    background: transparent;
+}
+/* .inner-box{
+    opacity: 0.5;
+}
+.inner-box:hover{
+    opacity: 1.0;
+} */
+
+.singup_header h1 {
+    font-size: 2.5rem;
+    color: #212121;
+}
+
+.singup_header p {
+    color: #555;
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.signup_body {
+    margin: 20px 0;
+}
+
+.signup_body p {
+    margin: 10px 0;
+}
+
+.signup_body p label {
+    display: block;
+    font-weight: bold;
+}
+
+.signup_body p input {
+
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #cccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-top: 4px;
+
+}
+
+.circle {
+    width: 200px;
+    height: 200px;
+    border-radius: 95px;
+    animation: myanimation 10s infinite;
+    position: absolute;
+}
+
+@keyframes myanimation {
+    0% {
+        background: linear-gradient(to top left, #3498db, #a8f5ff);
+    }
+
+    100% {
+        background: linear-gradient(to top left, #dda0dd, #ffc0cb);
+    }
+}
+
+.c1 {
+    top: 38px;
+    left: 26%;
+}
+
+.c2 {
+    bottom: 200px;
+    right: 25%;
+}
+
+/* #submit{
+background-color: #3498db;    
+border: none;
+color: white;
+cursor: pointer;
+} */
+.signup_body p input[type="submit"] {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.signup_body p input[type="submit"]:hover {
+    background: linear-gradient(to top left, #3498, rgb(128, 42, 165));
+    /* background: linear-gradient(to top left,plum, pink); */
+}
+
+.signup_footer {
+    color: #555;
+    text-align: center;
+}
+
+.signup_footer p a {
+    color: #3498db;
+}

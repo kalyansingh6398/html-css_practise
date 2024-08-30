@@ -1,0 +1,119 @@
+<!-- 
+
+                    all property for container(parents) 
+
+*****************************************************************************************************************************************************
+
+ horizontal vaale ko kahate hai main axis
+vertical  vaale ko kahate hai cross axis
+jab bhi ham kisi cheej element ko flex karate hai main axis ke around flex hoti hai cross axis ke around nahi 
+flex ka ek default behavior hota hai jisake ander jitane bhi child honge vo ek line me aa jaenge
+
+*************property of flex-direction*********
+1.column :-top to bottom start
+2.row :- left to right start
+3.column-reverse :- bottom to top start
+row-reverse :- right to left start
+
+***********property of  flex-wrap************** 
+1.wrap :- wrap ka use ham jab karate container ke child toggle karane par shrink hote hai to wrap ka use karate hai taaki vo shrink na hokar ke niche atte jaye 
+2.wrap-reverse
+3.gap :- gap child hote unke bich me gap define kar raha hota this is the shorthand property of row-gap and column gap
+gap:10px
+
+*********************************flex-flow********************
+
+flex-flow property is the shorthand property of flex-wrap and flex-direction  
+like:- flex-flow : wrap column
+
+**************** justify-content********************
+ we use justify-content to align the item on the main Axis
+
+ 1.space-around:- space around ka use jham jab karate hai jese ki manalo container space bacha hai aur ham chahate ki vo space hamare element ke left and right side me equally define ho jaye
+ jab ham space-around ka use karate hai 
+ 2.space-between :- 
+ 3.flex-start
+ 4.flex-end
+ 5.space-evely :- it distribute space eaually equally both side  left and right
+
+*******************align-items*******************
+
+we use align-item to align the item on the cross Axis
+
+align-item:center
+align-item:strech    strech align-item ki default property hoti
+
+**************align-content**************
+
+we use align-content manage karata row ke bich ke space ko
+
+align-content:space-between;
+
+
+*******************************************************************************
+all flex child property
+
+
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box in css</title>
+    <style>
+        .container{
+            height: 400px;
+            border: 2px solid red;
+            display: flex;
+            /* flex-direction: column;
+            flex-direction: column-reverse;
+            flex-direction: row;
+            flex-direction: row-reverse; */
+            /* flex-wrap: nowrap; */
+            flex-wrap: wrap;
+            /* flex-wrap: wrap-reverse; */
+            /* row-gap: 10px;
+            column-gap: 10px; */
+            /* gap: 20px; */
+
+            /* justify-content: space-around; */
+            /* justify-content: space-between;
+            justify-content: center;
+            justify-content: flex-end;
+            justify-content: left;
+            justify-content:space-evenly; */
+/*             
+            align-items: center;
+            align-items: end;
+            align-items: start;
+            align-items: self-end;
+            align-items: stretch; */
+            
+
+            align-content: space-between;
+            align-content: space-around;
+        }
+        .box{
+            border: 2px solid green;
+           /* margin: 10px 0; */
+           width: 80px; 
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box-1">box-1</div>
+        <div class="box" id="box-2">box-2</div>
+        <div class="box" id="box-3">box-3</div>
+        <div class="box" id="box-4">box-4</div>
+        <div class="box" id="box-5">box-5</div>
+        <div class="box" id="box-6">box-6</div>
+        <div class="box" id="box-7">box-7</div>
+        <div class="box" id="box-8">box-8</div>
+    </div>
+</body>
+</html>

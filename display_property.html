@@ -1,0 +1,106 @@
+<!-- 
+
+*********** display property ***********
+display value 
+
+block , inline, inline-block, none
+
+block elements:-basically ye content ke flow ko distrupte kar dete hai ye puri width lete hai
+
+some common block elements examples
+paragraphs,headings,div(divisions), form, list(ol,ul and li) tag
+
+inline element line by line aate hai inline element ki width nahi kar sakate because vo automatically width lete hai
+margin left and margin right de sakate hai but margin top and margin bottom nahi de sakate 
+
+
+some common inline elements in examples
+imges(<img>),span(<span>),anchor(<a>)
+-->
+
+
+<!-- 
+************ nav bar code ***********
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+*{
+    /* border: 1px solid skyblue; */
+    box-sizing: border-box;
+    margin:0;
+    padding: 0;
+}
+ul{
+    list-style: none;
+    text-align: end;
+    padding: 10px;
+    background-color: black;
+    color: white;
+  
+}
+li{
+    display: inline;
+    /* border: none;  */
+    /* display: none; */
+    padding: 20px;
+
+}
+li:hover{
+    color: blueviolet;
+    cursor: pointer
+
+}
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+        <li>Home</li>
+        <li>Product</li>
+        <li>Pricing</li>
+    </ul>
+    </nav>
+</body>
+</html>-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display property</title>
+    <style>
+        *{
+            border: 1px solid black;
+        }
+        p{
+            color: blue;
+            display: inline;
+            margin-left: 30px;            
+        }
+        h1{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Let's Get Started </h1>
+
+    <p>Lorem ipsum dolor sit.</p>
+
+    <p>Lorem, ipsum dolor.</p>
+
+    <!-- <span>Lorem, ipsum dolor.</span>
+
+    <span>Lorem ipsum dolor sit amet.</span>
+
+    <span>Lorem ipsum dolor sit amet.</span>
+
+    <img src="https://www.animationxpress.com/wp-content/uploads/2019/09/blockchain-400X400.jpg" alt="" srcset="">
+    <a href="#">Click Me</a>
+    <a href="#">Click Me</a> -->
+</body>
+</html>

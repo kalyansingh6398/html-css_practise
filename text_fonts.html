@@ -1,0 +1,95 @@
+<!-- box-sizing me box ki size banati hai vo border padding content milakar banati hai ham chahate ki box ki jo hamane height and width di usake hisaab se box sizing ho to ham karenge
+
+box-sizing = border-box
+
+ese karenge to border box ke hisaab se size lega 
+
+******text & font ***********
+
+
+property of text-align 
+
+1.center : -isase text center me ho jaega
+2. inherit :- jo bhi isake parent ne text align le rakha hoga use hi inherit kar lega 
+3.justify:-Distruibute your text evenly between margin
+4.left
+5.right
+6.end
+
+property of text-decoration
+1.overline
+2.line-through
+3.underline
+
+property of text-decoration-color :- ye property line ka color batayegi
+all color
+ 
+property of text-decoration-style
+
+1.dashed
+2.dotted
+3.double
+4.solid
+5.wavy:- isame line hogi vo lahar ke type ki hogi
+
+property of text-transform 
+
+1.capitalize :- ye element par laga denge vo element ke text ka character capital ho jaega like  transform => Transform
+2.lowercase 
+3.uppercase
+
+property of text-indent :- ye hamari first line ke word ko aage lane ke kaam aata hai
+like 
+example
+text-indent : 40px
+
+line-height :-  text ke line ke bich me gap deta hai 
+
+text shadow: 4px 4px 10px blue
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text fonts</title>
+    <style>
+        p {
+            text-align: justify;
+            text-decoration: line-through;
+            text-decoration: underline;
+            text-decoration-style: wavy;
+            text-decoration-color: aquamarine;
+            text-decoration-style: dashed;
+            text-transform: capitalize;
+        }
+
+        h1 {
+            text-transform: uppercase;
+        }
+
+        h3 {
+            text-transform: lowercase;
+        }
+
+        h6 {
+            text-indent: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem ipsum </h1>
+    <h3>Lorem ipsum dolor sit amet.</h3>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem neque velit iusto ipsam minus laboriosam
+        consequuntur inventore perspiciatis, fuga, illum quisquam quibusdam at cumque, aspernatur illo vel! Saepe,
+        sapiente soluta!</p>
+    <h6>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo, repellat.</h6>
+    <a href="#">click me</a>
+</body>
+
+</html>
